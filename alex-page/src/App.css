@@ -1,7 +1,12 @@
-.App {
+.App>.App-header {
   text-align: center;
 }
-
+body{
+  background-color: white;
+  color: black;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,19 +19,92 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+}
+
+.App-header>p>.h1 {
+  font-size: calc(10px + 5vmin);
+  color: #512bd4;
+  font-weight: bold;
+}
+h2 {
+  color: #512bd4;
+}
+.content {
+  background-color: white;
+  color: black;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  border: 3px solid #512bd4;
+  border-radius: 15px;
+  width: 33%;
+  margin-bottom: 2rem;
+}
+.card>h2{
+  text-align: center;
+}
+.projectlink {
+  cursor: pointer;
+  font-weight: bold;
+  color: #512bd4; 
+};
+.projectlink:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: #512bd4;
+}
+.more {
+  text-align: center;
+  color: #512bd4;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.more.active {
+  content: '🡅'  
+}
+.projectlink:before {
+  content: 	'+';
+}
+.projectlink.active:before { 
+  content: 	'-';
+}
+.tech {
+  font-size: 1.2rem;
+  color: black;
+}
+.pill {
+  color: white;
+  background-color: #512bd4;
+  margin: 1px 2px 1px 2px;
+  padding: 5px;
+  border-radius: 12px;
+  min-height:max-content;
+}
+
 
 @keyframes App-logo-spin {
   from {
