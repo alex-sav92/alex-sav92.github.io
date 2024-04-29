@@ -1,0 +1,28 @@
+[{
+    "title": "Read your bank transactions in less than 5 minutes?",
+    "shortContent": "There are multiple uses for open banking. This is just one of them. Make sure it counts.",
+    "content": "<p>Use open banking APIs, such as <strong>Nordigen</strong></p>",
+    "published": "9 Apr 2024",
+    "tags": ["software", "fintech", "openbank"],
+    "seoTitle": "open-bank",
+    "imageName": "money.jpg"
+  },
+  {
+    "title": "How do you learn to code?",
+    "shortContent": "The battle of choice - which platform will help you learn at your best capacity? And how do great learning experiences look?",
+    "content":
+    "<p>Tech is hard already, we need good experiences in learning. Each and every new application, technology or blog brings up various styles of presenting information. Combing through different perspectives can sometimes be difficult. Each of us is probably also multitasking and finding it hard to dedicate time to learning.</p>",
+    "published": "18 Apr 2024",
+    "tags": ["software", "education"],
+    "seoTitle": "learn-curve",
+    "imageName": "study.jpg"
+  },
+  {
+    "title": "Tech & content creation - the good, the bad and the ugly",
+    "shortContent": "Being a content creator for programming content can be a tough cookie. Here is how I approached it.",
+    "content": "<p>I had the privilege to collaborate with an educational platform in the IT sector. With their help and resources, I created two programming courses. The content is mainly based on videos, videos where I show a computer screen, and write various types and pieces of code, and then show how they behave.</p>",
+    "published":"25 Apr 2024",
+    "tags": ["software", "fintech", "openbank"],
+    "seoTitle": "content",
+    "imageName": "money.jpg"
+  }]
