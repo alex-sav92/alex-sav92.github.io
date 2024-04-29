@@ -1,12 +1,14 @@
 <main class="main">
   
   <div class="content">
-    <div>
+    <div class="header">
       <h1>Hello, I am Alex</h1>
-      <h2>I code, and I write. About coding.</h2>
+      <h2>{{'I {code}. And write about coding.'}}</h2>
       <nav class="navigation-bar">
-        <a class="pill" routerLink="/blog" routerLinkActive="active" ariaCurrentWhenActive="page">Blog</a>
-        <a class="pill" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
+        <a class="nav-link" routerLink="/blog" routerLinkActive="active-link" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{exact:
+          true}">Blog</a>
+        <a class="nav-link" routerLink="/about" routerLinkActive="active-link" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{exact:
+          true}">About</a>
       </nav>
     </div>
     <router-outlet />
