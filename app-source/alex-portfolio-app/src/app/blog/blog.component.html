@@ -1,0 +1,9 @@
+<div *ngIf="showOneArticle == false" class="blog-home">
+    @for (article of articles; track article){
+        <app-article [item]="article" [compact]="true"></app-article>
+    }
+</div>
+
+<div *ngIf="currentArticle?.title != ''">
+    <app-article [item]="currentArticle"></app-article>
+</div>

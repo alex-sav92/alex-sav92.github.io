@@ -1,0 +1,54 @@
+h1 {
+    color: var(--bright-blue);
+}
+.link-title{
+    text-decoration: none;
+    color: var(--hot-red);
+}
+a:link, a:hover, a:visited {
+    color: var(--hot-red);
+}
+a.readmore {
+    font-size: 1.2rem;
+    margin: 2px;
+    color: var(--bright-blue);
+    border-bottom: 2px solid var(--bright-blue);
+    text-decoration: none;
+    
+}
+.article-full>.text>p>a:link,
+.article-full>.text>p>a:hover,
+.article-full>.text>p>a:visited {
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--hot-red);
+}
+.article-full>.text{
+    font-size: 1.3rem;
+    background-color: var(--light-purple);
+    border-radius: 15px;
+    //padding: 10px;
+    //margin: 5px
+}
+
+.article {
+    margin: 40px 10px;
+}
+.article .under {
+    margin-top: -25px;
+    border-bottom: 2px solid  var(--hot-red);
+    border-left: 2px solid  var(--hot-red);
+    border-right: 2px solid  var(--hot-red);
+    padding: 10px;
+}
+.article>a>img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .article {
+        width: 100%;
+        margin: 15px 10px;
+        padding: 0px;
+    }
+}

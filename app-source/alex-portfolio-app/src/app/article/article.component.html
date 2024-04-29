@@ -1,0 +1,18 @@
+<div *ngIf="compact == true">
+    <div class="article">
+        <a [routerLink]="['/blog/', item?.seoTitle ]"><img src="/assets/{{item?.imageName}}"></a>
+        <div class="under">
+            <h1><a class="link-title" [routerLink]="['/blog/', item?.seoTitle]">{{item?.title}}</a></h1>
+
+            <p>{{item?.shortContent}} <span><a class="readmore" [routerLink]="['/blog/', item?.seoTitle ]">Read more</a></span></p>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="compact == false">
+    <div class="article-full">
+        <h1>{{item?.title}}</h1>
+        <h4>{{item?.published | date: 'mediumDate'}}</h4>
+        <div class="text" [innerHTML]="item?.content"></div>
+    </div>
+</div>

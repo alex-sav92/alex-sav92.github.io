@@ -1,0 +1,20 @@
+h1,h2,h3 {
+    color: var(--hot-red);
+}
+
+a {
+    color: var(--hot-red);
+    font-weight: bold;
+  }
+
+.blog-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 650px) {
+    .blog-home{
+        flex-direction: column;
+    }
+}

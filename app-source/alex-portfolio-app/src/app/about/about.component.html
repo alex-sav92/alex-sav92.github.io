@@ -1,0 +1,27 @@
+<div class="main-space">
+    <h1>Quick intro</h1>
+    <p>I am a <span class="highlight">software developer</span> with 10+ years of experience in programming. With my own tech and tools preferences, but also curious about new technologies and niches. I am most often found running in <span class="highlight">.NET</span> & <span class="highlight">Cloud</span>, and for the near future, curious about ML and open banking.</p>
+    <p>Using this space as a personal portfolio page, and also as a <span class="highlight">developer's blog</span>, to share my technical interests and experiences.</p>
+    <h1>Projects Timeline</h1>
+    <app-work></app-work>
+    
+    <h1 id="#social">Social</h1>
+    <p>If anything sounds interesting here, let's connect! Here are some options for professional contact. If you think our interests align or could bring together something fruitful, let me know in any of the ways below. </p>
+    <div class="pill-group">
+        @for (item of [
+          { title: 'LinkedIn', link: 'https://www.linkedin.com/in/alexandra-săvescu-8427016a/' },
+          { title: 'GitHub', link: 'https://github.com/alex-sav92' },
+          { title: 'Mail', link: 'mailto:alexandrabalean92@gmail.com' },
+        ]; track item.title) {
+          <a
+            class="pill"
+            [href]="item.link"
+            target="_blank"
+            rel="noopener"
+          >
+            <span>{{ item.title }}</span>
+          </a>
+        }
+      </div>
+</div>
+
