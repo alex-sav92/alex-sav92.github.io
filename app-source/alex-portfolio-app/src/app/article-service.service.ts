@@ -9,28 +9,21 @@ export class ArticleServiceService {
   constructor() {
     if (this.articles.length == 0) {
       this.articles = [
-      {
-        title: 'Read your bank transactions in less than 5 minutes?',
-        shortContent: 'There are multiple uses for open banking. This is just one of them. Make sure it counts.',
-        content: '<p>Use open banking APIs, such as <strong>Nordigen</strong>, for enabling access to bank accounts data. The system is secured with token-based systems, and every action is executed only under explicit user consent. Each prompt for a consent explains in clear details what are the things you consent to be read, and when is that consent\'s expiration date.</p>' +
-          '<p>Nordigen was acquired by <a href="https://gocardless.com/bank-account-data/">GoCardless</a>, and you can still use their starting functionality, along with other enrichments that this acquisition brought up.</p>' +
-          '<p>If you are new to the topic of open banking, do not worry. This is a vast subject, with applications in multiple areas. When I first found out about it, I was also a bit confused, with questions such as "where do I start?", or "what do I search first?". I recommend <a href="https://gocardless.com/guides/posts/open-banking/">this read</a> as a good introduction, or an overview of the domain.</p>'+
-          '<p>Just to give few examples of areas where open banking can bring value and improvements, I would say:' +
-          '<ul><li>Offering better payment or crediting options for businesses</li>' +
-          '<li>Offering better money management for customers</li>' +
-          '<li>Better decision making in financial terms, by using aggregation of data across multiple accounts</li></ul></p>' +
-          '<p>And for people who are more <strong>hands-on</strong> and prefer to learn by doing, I also have a very nice resource to start up. To see how easy ' +
-          'it can be with GoCardless, follow their <a href="https://developer.gocardless.com/bank-account-data/quick-start-guide">quickstart guide</a> and get ' +
-          'ready to be amazed by how quickly you can get access to your own personal financial data, even aggregated across multiple bank accounts!</p>' +
-          '<p>The guide follows just 6 simple steps, and is integrated with the majority of the banks in the EU. Technically, upon the data gathered after these steps, you can build any sort of financial management application. ' +
-          '<p>Maybe take a moment to glance at your financial decisions, first :). And then, use your imagination to find ideas. My first thought was about an expense tracker app.' +
-          'Yours could be about...credits, maybe? Or about detecting trends or anomalies in the transactions. Who knows?</p>',
-        published: new Date(2024, 3, 9),
-        tags: ['software', 'fintech', 'openbank'],
-        seoTitle: 'open-bank',
-        imageName: 'money.jpg'
-      },
-      {
+        {
+          title: 'Writing for tech',
+          content: 'My collaboration with <a href="https://code-maze.com/net-core-series/" target="blank">code-maze</a> was short. They are a group from Serbia, writing very vast and diverse programming content. I managed to write few articles on the topic of software development using .NET, in a peer-reviewed system. This collaboration got me some valuable insights I will share below about how to write quality articles on programming. In crafting the perfect programming articles, there are few aspects to consider, in order to help people the best way possible. Your clients include people with specific problems to solve, or people willing to learn new, niche and specialized features of a language or a technology. Here is what I learned to do better:'+
+          '<ul><li>Keep a <strong>clean, gradually unfolding structure</strong>. Start very short and concise, with the objective and what will you achieve at the end. Then, expand litlle by little. Follow eventually with a structure of what you`re about to present, with chapters, if this is the case. Then, dive even deeper into the details. Writing for online is allowed to be a bit more verbose, since users can easily search through and move to their specific area of interest, if they want to skip some details. If content spans across multiple topics, use the tools available to each specific publishing platform to split that content into clearly separated units - be they called sections, sub-topics etc. Use appropriate headings for them. Finish up with a closing statement or a conclusion. The same simple rules we were taught in school about composing text are still applicable - try keeping a clear separation of introduction - body - closing.</li>' +
+'<li>Use <strong>simple words</strong>. Use words native to the technology or technical ecosystem you are presenting. Avoid using equivalent terms or concepts from other programming language, because this creates sometimes a confusion in people\'s minds and the context can get lost. Prefer simple, clear language, with words that are used naturally by people in everyday life. If any specific explanations seem too abstract or hard to explain in simple words, you may try analogies or metaphors, but I also suggest attention in this area - analogies or metaphors should also refer to actions most people understand well and are familiar with. One quick example learned from the Microsoft documentation pages - they were presenting the concept of async using the act of preparing breakfast. I took this example as a great analogy, and tried to let it inspire me any time I was about to explain a concept that is a bit too technical but can be understood easily, with the right metaphor.</li>'+
+'<li>Prepare <strong>simple examples with code</strong>. All articles required code to be shown in order to demonstrate an idea. Because learning is seen as very practical, and the goal for code-maze is to make it easy for users to understand, and also copy-paste and test the code themselves if they want to. Prefer declarations of classes that keep <strong>familiar concepts</strong>, such as "Person", "Student", "House", "Car", "Dog" etc. Even if they might look boring or overused in tutorials, it is important to be introduced to new subjects in manners that are still familiar, and then, each person will adapt to their specific, more complex code base. Working from start with very <strong>complex abstractions can be overwhelming</strong> and make people quit if they don\'t catch it quickly. Remember, when being a programming writer, you have to always keep the user in focus. It is not about you showing off your capacities to abstract, or to think of complex architectures. It is about presenting, demonstrating, detailing, and helping people understand some features and adapt them to their future needs.</li>'+
+'<li><strong>Test, test, test</strong>. Make sure your code samples really work as you expect them to. Few times, my article was returned back to me due to this exact reason. In demonstrating a link between a cause and an effect, make sure your results are accurate, and do not contradict your initial hypothesis. This looks specifically unprofessional. Also, try thinking about how your code would act in <strong>different environments, different platforms </strong>running your type of code, different OSs, etc. Try and ensure a code example as <strong>version-neutral</strong> as possible, so it can be ran by as many people as possible.</li>'+
+'<li>Last but not least, writing aspects - <strong>grammar and tone</strong>. People tend to overlook grammatical mistakes in technical contexts, preferring to claim that this aspect is secondary, and the focus is on the actual code. I learned from code-maze that this is not the case. If you want to present as professional, you should keep a keen eye on such details. Yes, people can understand sometimes a typo or a missing letter can happen. But better not make a habit out of ignoring the grammar. Also, the tone - make sure the reading of the text does not feel aggressive or like a know-it-all. Keep a collaborative, open tone in your article. Some people might tend to use a more demanding or aggressive tone. This is not recommended in professional setups. I learned to aim for a friendly, open tone in the writing, even if I am not yet an expert in conveying this in my writing. I used grammarly for this, and it was a huge help, a help that I also use now, in some specific areas. I recommend it for people who need to write a lot, maybe in a language that\'s not native, and may not be aware of the tone.',
+          shortContent: 'What makes a programming article good? I found out there are some good general rules, and writing for tech is not the same as literature. Let me share my story.',
+          tags: ['software'],
+          published: new Date(2024, 5, 10),
+          seoTitle: 'tech-writing',
+          imageName: 'code_writer.jpg'
+        },
+        {
         title: 'How do you learn to code?',
         shortContent: 'The battle of choice - which platform will help you learn at your best capacity? And how do great learning experiences look?',
         content:
@@ -54,9 +47,10 @@ export class ArticleServiceService {
         imageName: 'study.jpg'
       },
       {
-        title: 'Tech & content creation - the good, the bad and the ugly',
-        shortContent: 'Being a content creator for programming content can be a tough cookie. Here is how I approached it.',
-        content: '<p>I had the privilege to collaborate with an educational platform in the IT sector. With their help and resources, I created two programming courses. The content is mainly based on videos, videos where I show a computer screen, and write various types and pieces of code, and then show how they behave.</p>',
+        title: 'Content creation for tech - the good, the bad and the ugly',
+        shortContent: 'Being a creator for programming content can be a tough cookie. Here is how I approached it.',
+        content:
+        '<p>I had the privilege to collaborate with an educational platform in the IT sector. With their help and resources, I created two programming courses. The content is mainly based on videos, videos where I show a computer screen, and write various types and pieces of code, and then show how they behave.</p>',
         published: new Date(2024, 3, 25),
         tags: ['software', 'fintech', 'openbank'],
         seoTitle: 'content',

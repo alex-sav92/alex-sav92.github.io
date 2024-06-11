@@ -3,7 +3,7 @@
         <div class="under">
             <h1><a class="link-title" [routerLink]="['/blog/', item?.seoTitle]">{{item?.title}}</a></h1>
             <p><strong>{{item?.published | date: 'mediumDate'}}</strong></p>
-            <p>{{item?.shortContent}} <span><a class="readmore" [routerLink]="['/blog/', item?.seoTitle ]">Read more</a></span></p>
+            <p>{{item?.shortContent}}</p>
         </div>
     </div>
 </div>

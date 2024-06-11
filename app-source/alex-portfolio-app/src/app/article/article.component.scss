@@ -14,7 +14,7 @@ a.readmore {
     color: var(--bright-blue);
     border-bottom: 2px solid var(--bright-blue);
     text-decoration: none;
-    
+
 }
 .article-full>.text>p>a:link,
 .article-full>.text>p>a:hover,
@@ -27,8 +27,6 @@ a.readmore {
     font-size: 1.3rem;
     background-color: var(--light-purple);
     border-radius: 15px;
-    //padding: 10px;
-    //margin: 5px
 }
 
 .article {
@@ -36,7 +34,8 @@ a.readmore {
 }
 .article .under {
     margin-top: -25px;
-    border: 2px solid  var(--hot-red);
+    border-right: 2px solid  var(--hot-red);
+    border-left: 2px solid  var(--hot-red);
     border-radius: 1rem;
     padding: 10px;
 }
