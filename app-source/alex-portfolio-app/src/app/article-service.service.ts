@@ -21,7 +21,7 @@ export class ArticleServiceService {
         '<p>The wellbeing app is the simplest one, and it is built using HTML, CSS and vanilla JavaScript. It is a daily checklist, where you can add your daily habits and check them off whenever you complete them. A small firework animation pops up for those days you manage to tick all of the items.</p>' +
         '<p>All these items took less than a week to be built, and I am very happy with the results. I am also very happy with the process, which was very engaging and fun, and I am looking forward to building more apps with the help of AI. I am also looking forward to seeing how AI will evolve in the future, and how it will continue to help us in our development process. So far, I can say Chat GPT is very good and friendly in the process of building such apps, and I am very happy with its responses, as it\'s always been very helpful in all posible cases: both errors or various problems, and adding extra features or brainstorming new ideas for potential improvements.</p>'+
         '<p>Happy to have some apps I use on a daily basis, and that I built myself, with the help of AI.</p>',
-        published: new Date(2026, 3, 30),
+        published: new Date(2026, 2, 30),
         tags: ['software', 'ai', 'chatgpt'],
         seoTitle: 'software-dev-with-ai',
         imageName: 'ai-chatgpt.jpg'
