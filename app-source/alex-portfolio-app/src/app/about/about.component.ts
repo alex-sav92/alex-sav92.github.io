@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { WorkComponent } from "../work/work.component";
 
 @Component({
@@ -7,7 +6,7 @@ import { WorkComponent } from "../work/work.component";
     standalone: true,
     templateUrl: './about.component.html',
     styleUrl: './about.component.scss',
-    imports: [RouterLink, WorkComponent]
+    imports: [WorkComponent]
 })
 export class AboutComponent {
 
