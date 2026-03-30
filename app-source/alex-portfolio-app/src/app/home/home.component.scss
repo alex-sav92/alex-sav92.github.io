@@ -1,0 +1,17 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+.button-link {
+    padding: 1rem 1rem;
+    //margin: 10px 0 10px;
+    color: white;
+    background-color: var(--hot-red);
+    border: 1px solid var(--hot-red);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}

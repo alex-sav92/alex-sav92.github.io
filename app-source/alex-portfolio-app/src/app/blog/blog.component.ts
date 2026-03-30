@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { ActivatedRoute, Router, RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Article } from '../models/article';
 import { ArticleComponent } from "../article/article.component";
 import { ArticleServiceService } from '../article-service.service';
@@ -10,7 +10,7 @@ import { ArticleServiceService } from '../article-service.service';
     standalone: true,
     templateUrl: './blog.component.html',
     styleUrl: './blog.component.scss',
-    imports: [RouterModule, CommonModule, RouterOutlet, RouterLink, RouterLinkActive, ArticleComponent]
+    imports: [RouterModule, CommonModule, ArticleComponent]
 })
 export class BlogComponent {
   public articles: Article[] = [];
