@@ -1,18 +1,16 @@
 h1 {
     color: var(--hot-red);
 }
-.link-title{
+.link-title {
     text-decoration: none;
     color: var(--hot-red);
 }
-a:link, a:hover, a:visited {
-    color: var(--hot-red);
-}
+
 a.readmore {
     font-size: 1.2rem;
     margin: 2px;
     color: var(--bright-blue);
-    border-bottom: 2px solid var(--bright-blue);
+    border-bottom: 2px solid black;
     text-decoration: none;
 
 }
@@ -21,7 +19,7 @@ a.readmore {
 .article-full>.text>p>a:visited {
     text-decoration: underline;
     font-weight: bold;
-    color: var(--hot-red);
+    color: var(--bright-blue);
 }
 .article-full>.text{
     font-size: 1.3rem;
@@ -34,13 +32,15 @@ a.readmore {
 }
 .article .under {
     margin-top: -25px;
-    border-right: 2px solid  var(--hot-red);
-    border-left: 2px solid  var(--hot-red);
-    border-radius: 1rem;
+    border: 1px solid black;
+    border-radius: 0.4rem;
     padding: 10px;
 }
 .article img, .article-full img {
     max-width: 100%;
+}
+.tag-value{
+    color: var(--bright-blue);
 }
 
 @media screen and (max-width: 650px) {

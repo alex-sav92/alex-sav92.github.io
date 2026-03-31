@@ -2,7 +2,9 @@
     <div class="article">
         <div class="under">
             <h1><a class="link-title" [routerLink]="['/blog/', item?.seoTitle]">{{item?.title}}</a></h1>
-            <p><strong>{{item?.published | date: 'mediumDate'}}</strong></p>
+            <p>
+                <strong>{{item?.published | date: 'mediumDate'}}</strong>
+            </p>
             <p>{{item?.shortContent}}</p>
         </div>
     </div>
@@ -11,8 +13,13 @@
 <div *ngIf="compact == false">
     <div class="article-full">
         <h1>{{item?.title}}</h1>
-        <h4>{{item?.published | date: 'mediumDate'}}</h4>
+        <h4>{{item?.published | date: 'mediumDate'}} 
+            <span *ngIf="item?.tags"> | Tags: 
+                <span class="tag-value" *ngFor="let tag of item?.tags">{{tag}} </span>
+            </span>
+        </h4>
         <img src="/assets/{{item?.imageName}}">
         <div class="text" [innerHTML]="item?.content"></div>
+        
     </div>
 </div>

@@ -1,17 +1,46 @@
-.navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 2rem;
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  grid-template-rows: repeat(2, 150px);
+  gap: 20px;
 }
-.button-link {
-    padding: 1rem 1rem;
-    //margin: 10px 0 10px;
-    color: white;
-    background-color: var(--hot-red);
-    border: 1px solid var(--hot-red);
-    border-radius: 5px;
-    color: white;
+
+.button-grid>.button-link {
     text-decoration: none;
-    font-size: large;
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+  background: var(--hot-red);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: center;  /* horizontal */
+  align-items: center;      /* vertical */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-grid>.button-link:hover {
+  background: var(--bright-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.button-grid>.button-link:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 600px) {
+  .button-grid {
+    grid-template-columns: 1fr; /* one column */
+    grid-template-rows: none;   /* let rows size automatically */
+  }
+  .button-grid>button-link {
+    height: 220px; /* bigger on mobile */
+  }
 }
